@@ -17,17 +17,21 @@ public class ArticleCommentService {
     private final ArticleRepository articleRepository;
     private final ArticleCommentRepository articleCommentRepository;
 
+    // 검색
     @Transactional(readOnly = true)
     public List<ArticleCommentDto> searchArticleComments(Long articleId) {
         return List.of();
     }
 
+    // 저장
     public void saveArticleComment(ArticleCommentDto dto) {
     }
 
+    // 수정
     public void updateArticleComment(ArticleCommentDto dto) {
     }
 
+    // 삭제
     public void deleteArticleComment(Long articleCommentId) {
     }
 

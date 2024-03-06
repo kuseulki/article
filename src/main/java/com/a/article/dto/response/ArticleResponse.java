@@ -13,6 +13,7 @@ public record ArticleResponse(
         LocalDateTime createdAt,
         String email,
         String nickname
+
 ) implements Serializable {
 
     public static ArticleResponse of(Long id, String title, String content, String hashtag, LocalDateTime createdAt, String email, String nickname) {
